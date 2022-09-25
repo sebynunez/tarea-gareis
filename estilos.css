@@ -1,0 +1,226 @@
+/*
+Realizar una pagina responsive con las siguientes caracteristicas: 
+    *menu selectivo (nav)
+    *colores acorde a la pagina, no esos colores feos, escucho navarro y nuñez
+    *incluir 5 imagenes utilizando grid. "distinto a lo visto en clase"
+    la pagina se debera entregar via "github" hasta las 19hs; LEEA el dia 25 del corriente mes de 2023.
+    las imagenes de lo que a ustedes les guste!
+    email:pablogareistecnica@gmail.com
+*/
+
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html{
+
+    scroll-behavior: smooth;
+
+}
+
+body{
+
+    font-family: 'Times New Roman', Times, serif;
+
+
+}
+
+header {
+
+    background-color: rgb(68, 68, 252);
+}
+
+
+header .titulo{
+
+    margin: 0;
+    padding: 15px 25px; 
+    font-weight: bold; 
+    font-size: 45px; 
+    font-family:'Times New Roman', Times, serif;
+    color:rgb(233, 222, 73);
+    border: 1px solid black;
+
+}
+
+header .navegador {
+
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+
+}
+
+header nav {
+
+    display: flex wrap ;
+    flex-direction: column;
+    text-align: right;
+    padding-bottom: 25px;
+}
+
+header a {
+
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+
+}
+
+header a:hover {
+
+    color: white;
+
+}
+
+.navegador {
+
+    max-width: 1400px;
+    margin: auto;
+}
+
+nav { 
+
+padding:  18px;
+margin-bottom: 5px;
+font-size: 17px;
+
+}
+
+
+
+footer {
+
+    background-color: rgb(68, 68, 252);
+}
+
+.marca{
+    position: relative;
+    text-align:left;
+    margin-top: 100px;
+    padding-bottom: 55px;
+    
+
+}
+
+.derechos{
+
+    position:absolute;
+    bottom:-10px;
+    color: white;
+    font-family:'Times New Roman', Times, serif;
+    
+}
+
+.galeria-contenedor{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: 100px;
+    padding: 20px;
+    grid-gap: 15px;
+}
+
+.galeria-imagen{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-position: center center;
+}
+
+.galeria-item{
+    position: relative;
+}
+
+.galeria-texto{
+    position: absolute;
+    bottom: 0;
+    color: white;
+    font-size: 17px;
+    background: linear-gradient(
+        rgba(255,255,255,0), rgba(0,0,0,1)
+    );
+    width: 100%;
+    margin: 0;
+    padding: 5px;    
+}
+
+.galeria-item:nth-child(1){
+    grid-row-start: span 3;
+    border: 1px solid black;
+}
+
+.galeria-item:nth-child(2){
+    grid-row-start: span 4;
+    border: 1px solid black;
+}
+
+.galeria-item:nth-child(3){
+    grid-row-start: span 4;
+    border: 1px solid black;
+}
+
+.galeria-item:nth-child(4){
+    grid-row-start: span 2;
+    border: 1px solid black;
+}
+
+.galeria-item:nth-child(5){
+    grid-row-start: span 3;
+    border: 1px solid black;
+}
+
+.galeria-item:nth-child(6){
+    grid-row-start: span 3;
+    border: 1px solid black;
+}
+
+.galeria-item:nth-child(7){
+    grid-row-start: span 2 ;
+    border: 1px solid black;
+}
+
+.galeria-item:nth-child(8){
+    grid-row-start: span 2;
+    border: 1px solid black;
+}
+
+.galeria-item:nth-child(9){
+    grid-row-start: span 2  ;
+    border: 1px solid black;
+}
+
+.movimiento{
+
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+
+
+
+@media(min-width:850px){
+
+    header{
+        position: relative;
+        width: 100%;
+    }
+
+    header .navegador {
+
+        flex-direction: row; 
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+    }
+    
+
+}
